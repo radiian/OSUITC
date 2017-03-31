@@ -1,57 +1,86 @@
-\contentsline {section}{Article I - Organization Name}{3}{section*.2}
-\contentsline {paragraph}{}{3}{section*.3}
-\contentsline {section}{Article II - Purpose}{3}{section*.4}
-\contentsline {paragraph}{}{3}{section*.5}
-\contentsline {section}{Article III - Members and Membership}{3}{section*.6}
-\contentsline {paragraph}{}{3}{section*.7}
-\contentsline {subsection}{\numberline {1}Eligibility}{3}{subsection.0.1}
-\contentsline {paragraph}{}{3}{section*.8}
-\contentsline {paragraph}{}{3}{section*.9}
-\contentsline {subsection}{\numberline {2}Member Classes}{4}{subsection.0.2}
-\contentsline {paragraph}{}{4}{section*.10}
-\contentsline {subsection}{\numberline {3}Member Dues}{4}{subsection.0.3}
-\contentsline {paragraph}{}{4}{section*.11}
-\contentsline {subsection}{\numberline {4}Member Requirements}{4}{subsection.0.4}
-\contentsline {paragraph}{}{4}{section*.12}
-\contentsline {subsection}{\numberline {5}Disciplinary Action}{4}{subsection.0.5}
-\contentsline {paragraph}{}{4}{section*.13}
-\contentsline {paragraph}{}{5}{section*.14}
-\contentsline {subsection}{\numberline {6}Resignation}{5}{subsection.0.6}
-\contentsline {paragraph}{}{5}{section*.15}
-\contentsline {paragraph}{}{6}{section*.16}
-\contentsline {section}{Article IV - Officers}{6}{section*.17}
-\contentsline {paragraph}{}{6}{section*.18}
-\contentsline {subsection}{\numberline {1}The Officers}{6}{subsection.0.1}
-\contentsline {paragraph}{}{6}{section*.19}
-\contentsline {subsection}{\numberline {2}Nominations and Elections}{6}{subsection.0.2}
-\contentsline {paragraph}{}{6}{section*.20}
-\contentsline {subsection}{\numberline {3}The Office of the President}{6}{subsection.0.3}
-\contentsline {subsubsection}{\numberline {3.1}Purpose and Duties}{6}{subsubsection.0.3.1}
-\contentsline {paragraph}{}{6}{section*.21}
-\contentsline {subsubsection}{\numberline {3.2}Eligibility}{7}{subsubsection.0.3.2}
-\contentsline {paragraph}{}{7}{section*.22}
-\contentsline {subsection}{\numberline {4}The Office of the Vice President}{7}{subsection.0.4}
-\contentsline {subsubsection}{\numberline {4.1}Purpose and Duties}{7}{subsubsection.0.4.1}
-\contentsline {paragraph}{}{7}{section*.23}
-\contentsline {subsubsection}{\numberline {4.2}Eligibility}{7}{subsubsection.0.4.2}
-\contentsline {paragraph}{}{7}{section*.24}
-\contentsline {subsection}{\numberline {5}The Office of the Secretary}{7}{subsection.0.5}
-\contentsline {subsubsection}{\numberline {5.1}Purpose and Duties}{7}{subsubsection.0.5.1}
-\contentsline {paragraph}{}{7}{section*.25}
-\contentsline {subsubsection}{\numberline {5.2}Eligibility}{7}{subsubsection.0.5.2}
-\contentsline {paragraph}{}{7}{section*.26}
-\contentsline {subsection}{\numberline {6}The Office of the Treasurer}{8}{subsection.0.6}
-\contentsline {subsubsection}{\numberline {6.1}Purpose and Duties}{8}{subsubsection.0.6.1}
-\contentsline {paragraph}{}{8}{section*.27}
-\contentsline {subsubsection}{\numberline {6.2}Eligibility}{8}{subsubsection.0.6.2}
-\contentsline {paragraph}{}{8}{section*.28}
-\contentsline {subsection}{\numberline {7}The Office of the Director}{8}{subsection.0.7}
-\contentsline {subsubsection}{\numberline {7.1}Purpose and Duties}{8}{subsubsection.0.7.1}
-\contentsline {paragraph}{}{8}{section*.29}
-\contentsline {subsubsection}{\numberline {7.2}Eligibility}{8}{subsubsection.0.7.2}
-\contentsline {paragraph}{}{8}{section*.30}
-\contentsline {subsection}{\numberline {8}The Office of the Representative}{8}{subsection.0.8}
-\contentsline {subsubsection}{\numberline {8.1}Purpose and Duties}{8}{subsubsection.0.8.1}
-\contentsline {paragraph}{}{8}{section*.31}
-\contentsline {subsubsection}{\numberline {8.2}Eligibility}{9}{subsubsection.0.8.2}
-\contentsline {paragraph}{}{9}{section*.32}
+\contentsline {section}{Article I - Organization Name}{4}{section*.2}
+\contentsline {paragraph}{}{4}{section*.3}
+\contentsline {section}{Article II - Purpose}{4}{section*.4}
+\contentsline {paragraph}{}{4}{section*.5}
+\contentsline {section}{Article III - Members and Membership}{4}{section*.6}
+\contentsline {paragraph}{}{4}{section*.7}
+\contentsline {subsection}{\numberline {1}Eligibility}{4}{subsection.0.1}
+\contentsline {paragraph}{}{4}{section*.8}
+\contentsline {paragraph}{}{4}{section*.9}
+\contentsline {subsection}{\numberline {2}Member Classes}{5}{subsection.0.2}
+\contentsline {paragraph}{}{5}{section*.10}
+\contentsline {subsection}{\numberline {3}Member Dues}{5}{subsection.0.3}
+\contentsline {paragraph}{}{5}{section*.11}
+\contentsline {subsection}{\numberline {4}Member Requirements}{5}{subsection.0.4}
+\contentsline {paragraph}{}{5}{section*.12}
+\contentsline {subsection}{\numberline {5}Disciplinary Action}{5}{subsection.0.5}
+\contentsline {paragraph}{}{5}{section*.13}
+\contentsline {paragraph}{}{6}{section*.14}
+\contentsline {subsection}{\numberline {6}Resignation}{6}{subsection.0.6}
+\contentsline {paragraph}{}{6}{section*.15}
+\contentsline {paragraph}{}{7}{section*.16}
+\contentsline {section}{Article IV - Officers}{7}{section*.17}
+\contentsline {paragraph}{}{7}{section*.18}
+\contentsline {subsection}{\numberline {1}The Officers}{7}{subsection.0.1}
+\contentsline {paragraph}{}{7}{section*.19}
+\contentsline {subsection}{\numberline {2}Nominations and Elections}{7}{subsection.0.2}
+\contentsline {paragraph}{}{7}{section*.20}
+\contentsline {subsubsection}{\numberline {2.1}Election Timeline}{7}{subsubsection.0.2.1}
+\contentsline {paragraph}{}{7}{section*.21}
+\contentsline {subsubsection}{\numberline {2.2}Applications}{8}{subsubsection.0.2.2}
+\contentsline {paragraph}{}{8}{section*.22}
+\contentsline {subsubsection}{\numberline {2.3}Debates}{8}{subsubsection.0.2.3}
+\contentsline {paragraph}{}{8}{section*.23}
+\contentsline {subsubsection}{\numberline {2.4}Election and Votes}{8}{subsubsection.0.2.4}
+\contentsline {paragraph}{}{8}{section*.24}
+\contentsline {subsubsection}{\numberline {2.5}A Tie Vote Between Two Candidates}{8}{subsubsection.0.2.5}
+\contentsline {paragraph}{}{8}{section*.25}
+\contentsline {subsubsection}{\numberline {2.6}A Tie Vote Between Three or Four Candidates}{9}{subsubsection.0.2.6}
+\contentsline {paragraph}{}{9}{section*.26}
+\contentsline {subsubsection}{\numberline {2.7}Ties between Five or More Candidates}{9}{subsubsection.0.2.7}
+\contentsline {paragraph}{}{9}{section*.27}
+\contentsline {subsection}{\numberline {3}The Office of the President}{9}{subsection.0.3}
+\contentsline {subsubsection}{\numberline {3.1}Purpose and Duties}{9}{subsubsection.0.3.1}
+\contentsline {paragraph}{}{9}{section*.28}
+\contentsline {subsubsection}{\numberline {3.2}Eligibility}{9}{subsubsection.0.3.2}
+\contentsline {paragraph}{}{9}{section*.29}
+\contentsline {subsection}{\numberline {4}The Office of the Vice President}{10}{subsection.0.4}
+\contentsline {subsubsection}{\numberline {4.1}Purpose and Duties}{10}{subsubsection.0.4.1}
+\contentsline {paragraph}{}{10}{section*.30}
+\contentsline {subsubsection}{\numberline {4.2}Eligibility}{10}{subsubsection.0.4.2}
+\contentsline {paragraph}{}{10}{section*.31}
+\contentsline {subsection}{\numberline {5}The Office of the Secretary}{10}{subsection.0.5}
+\contentsline {subsubsection}{\numberline {5.1}Purpose and Duties}{10}{subsubsection.0.5.1}
+\contentsline {paragraph}{}{10}{section*.32}
+\contentsline {subsubsection}{\numberline {5.2}Eligibility}{10}{subsubsection.0.5.2}
+\contentsline {paragraph}{}{10}{section*.33}
+\contentsline {subsection}{\numberline {6}The Office of the Treasurer}{10}{subsection.0.6}
+\contentsline {subsubsection}{\numberline {6.1}Purpose and Duties}{10}{subsubsection.0.6.1}
+\contentsline {paragraph}{}{10}{section*.34}
+\contentsline {subsubsection}{\numberline {6.2}Eligibility}{11}{subsubsection.0.6.2}
+\contentsline {paragraph}{}{11}{section*.35}
+\contentsline {subsection}{\numberline {7}The Office of the Director}{11}{subsection.0.7}
+\contentsline {subsubsection}{\numberline {7.1}Purpose and Duties}{11}{subsubsection.0.7.1}
+\contentsline {paragraph}{}{11}{section*.36}
+\contentsline {subsubsection}{\numberline {7.2}Eligibility}{11}{subsubsection.0.7.2}
+\contentsline {paragraph}{}{11}{section*.37}
+\contentsline {subsection}{\numberline {8}The Office of the Representative}{11}{subsection.0.8}
+\contentsline {subsubsection}{\numberline {8.1}Purpose and Duties}{11}{subsubsection.0.8.1}
+\contentsline {paragraph}{}{11}{section*.38}
+\contentsline {subsubsection}{\numberline {8.2}Eligibility}{12}{subsubsection.0.8.2}
+\contentsline {paragraph}{}{12}{section*.39}
+\contentsline {section}{Article V - Advisors}{12}{section*.40}
+\contentsline {paragraph}{}{12}{section*.41}
+\contentsline {section}{Article VI - Meetings}{12}{section*.42}
+\contentsline {paragraph}{}{12}{section*.43}
+\contentsline {subsection}{\numberline {1}Twice Yearly Member Meetings}{12}{subsection.0.1}
+\contentsline {paragraph}{}{12}{section*.44}
+\contentsline {subsection}{\numberline {2}Executive Meetings}{12}{subsection.0.2}
+\contentsline {paragraph}{}{12}{section*.45}
+\contentsline {subsection}{\numberline {3}Other Meetings}{13}{subsection.0.3}
+\contentsline {paragraph}{}{13}{section*.46}
+\contentsline {section}{Article VII - Removal From Office/Revoking Membership }{13}{section*.47}
+\contentsline {paragraph}{}{13}{section*.48}
+\contentsline {section}{Article VIII - Amendments}{13}{section*.49}
+\contentsline {paragraph}{}{13}{section*.50}
+\contentsline {section}{Article IX - Parliamentary Authority }{13}{section*.51}
