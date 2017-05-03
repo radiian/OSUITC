@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.9.1)  2 MAY 2017 23:43
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.9.13)  3 MAY 2017 00:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -180,120 +180,138 @@ LaTeX Info: Redefining \nameref on input line 37.
 \openout3 = `ConstitutionDraft2.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 38.
+(Font)              <14.4> on input line 39.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 38.
+(Font)              <7> on input line 39.
 
 
 LaTeX Warning: No \author given.
 
 [1
 
-{/usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./ConstitutionDraft2.toc
+{/usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]pdfTeX warnin
+g (ext4): destination with the same identifier (name{page.}) has been already u
+sed, duplicate ignored
+<to be read again> 
+                   \relax 
+l.48 \clearpage
+               {} [2
+
+] (./ConstitutionDraft2.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 7.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 7.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 7.
- [2
+ [1
 
 ])
 \tf@toc=\write4
 \openout4 = `ConstitutionDraft2.toc'.
 
- [3] [4
+ [2] [1
 
-] [5]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 146.
+] [2]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 156.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 146.
- [6]pdfTeX warning (ext4): destination with the same identifier (name{subsectio
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 156.
+ [3]pdfTeX warning (ext4): destination with the same identifier (name{subsectio
 n.0.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.168 \subsection{The Officers}
-                                [7]pdfTeX warning (ext4): destination with the 
+l.178 \subsection{The Officers}
+                                [4]pdfTeX warning (ext4): destination with the 
 same identifier (name{subsection.0.2}) has been already used, duplicate ignored
 
 <to be read again> 
                    \relax 
-l.192 \subsection{Nominations and Elections}
-                                             [8] [9]pdfTeX warning (ext4): dest
+l.202 \subsection{Nominations and Elections}
+                                             [5] [6]pdfTeX warning (ext4): dest
 ination with the same identifier (name{subsection.0.3}) has been already used, 
 duplicate ignored
 <to be read again> 
                    \relax 
-l.234 \subsection{The Office of the President}
+l.256 \subsection{The Office of the President}
                                               pdfTeX warning (ext4): destinatio
 n with the same identifier (name{subsection.0.4}) has been already used, duplic
 ate ignored
 <to be read again> 
                    \relax 
-l.244 ...section{The Office of the Vice President}
-                                                   [10]pdfTeX warning (ext4): d
-estination with the same identifier (name{subsection.0.5}) has been already use
-d, duplicate ignored
+l.266 ...section{The Office of the Vice President}
+                                                   [7]pdfTeX warning (ext4): de
+stination with the same identifier (name{subsection.0.5}) has been already used
+, duplicate ignored
 <to be read again> 
                    \relax 
-l.253 \subsection{The Office of the Secretary}
+l.275 \subsection{The Office of the Secretary}
                                               pdfTeX warning (ext4): destinatio
 n with the same identifier (name{subsection.0.6}) has been already used, duplic
 ate ignored
 <to be read again> 
                    \relax 
-l.262 \subsection{The Office of the Treasurer}
-                                               [11] [12]pdfTeX warning (ext4): 
-destination with the same identifier (name{subsection.0.1}) has been already us
-ed, duplicate ignored
+l.284 \subsection{The Office of the Treasurer}
+                                               [8] [9]pdfTeX warning (ext4): de
+stination with the same identifier (name{subsection.0.1}) has been already used
+, duplicate ignored
 <to be read again> 
                    \relax 
-l.301 \subsection{Twice Yearly Member Meetings}
-                                               pdfTeX warning (ext4): destinati
-on with the same identifier (name{subsection.0.2}) has been already used, dupli
-cate ignored
+l.337 \subsection{Member Meetings}
+                                   [10]pdfTeX warning (ext4): destination with 
+the same identifier (name{subsection.0.2}) has been already used, duplicate ign
+ored
 <to be read again> 
                    \relax 
-l.305 \subsection{Executive Meetings}
+l.344 \subsection{Executive Meetings}
                                      pdfTeX warning (ext4): destination with th
 e same identifier (name{subsection.0.3}) has been already used, duplicate ignor
 ed
 <to be read again> 
                    \relax 
-l.309 \subsection{Other Meetings}
-                                  [13]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 325.
- [14]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 325.
+l.350 \subsection{Disciplinary Meetings}
+                                        pdfTeX warning (ext4): destination with
+ the same identifier (name{subsection.0.4}) has been already used, duplicate ig
+nored
+<to be read again> 
+                   \relax 
+l.354 \subsection{Other Meetings}
+                                 pdfTeX warning (ext4): destination with the sa
+me identifier (name{subsection.0.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.363 \subsection{Member Meetings}
+                                   [11]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 382.
+ [12]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 382.
  (./ConstitutionDraft2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 325.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 325.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 382.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 382.
 Package rerunfilecheck Info: File `ConstitutionDraft2.out' has not changed.
-(rerunfilecheck)             Checksum: DFC6D9E9A1907BBF2ACBBC1E547BF6C1;3237.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 325.
+(rerunfilecheck)             Checksum: 72C66A337EE5AB552A52A8725F8F9BAF;3568.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 382.
  ) 
 Here is how much of TeX's memory you used:
- 4391 strings out of 495063
- 65931 string characters out of 3182202
+ 4406 strings out of 495063
+ 66109 string characters out of 3182201
  141334 words of memory out of 3000000
- 7497 multiletter control sequences out of 15000+200000
+ 7501 multiletter control sequences out of 15000+200000
  8808 words of font info for 31 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 29i,6n,28p,757b,373s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,6n,28p,767b,373s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on ConstitutionDraft2.pdf (14 pages, 83140 bytes).
+Output written on ConstitutionDraft2.pdf (16 pages, 86295 bytes).
 PDF statistics:
- 363 PDF objects out of 1000 (max. 8388607)
- 339 compressed objects within 4 object streams
- 95 named destinations out of 1000 (max. 500000)
- 353 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 402 PDF objects out of 1000 (max. 8388607)
+ 376 compressed objects within 4 object streams
+ 106 named destinations out of 1000 (max. 500000)
+ 393 words of extra memory for PDF output out of 10000 (max. 10000000)
 
