@@ -92,9 +92,7 @@
 \contentsline {paragraph}{}{11}{section*.55}
 \contentsline {subsection}{\numberline {1}Member Meetings}{12}{subsection.0.1}
 \contentsline {paragraph}{}{12}{section*.56}
-\contentsline {section}{Article VIII - Removal From Office/Revoking Membership }{12}{section*.57}
+\contentsline {section}{Article VIII - Amendments}{12}{section*.57}
 \contentsline {paragraph}{}{12}{section*.58}
-\contentsline {section}{Article IX - Amendments}{12}{section*.59}
+\contentsline {section}{Article IX - Parliamentary Authority }{12}{section*.59}
 \contentsline {paragraph}{}{12}{section*.60}
-\contentsline {section}{Article X - Parliamentary Authority }{12}{section*.61}
-\contentsline {paragraph}{}{12}{section*.62}

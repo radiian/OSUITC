@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.9.13)  3 MAY 2017 00:49
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.9.13)  3 MAY 2017 00:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -286,21 +286,21 @@ me identifier (name{subsection.0.1}) has been already used, duplicate ignored
                    \relax 
 l.363 \subsection{Member Meetings}
                                    [11]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 382.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 378.
  [12]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 382.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 378.
  (./ConstitutionDraft2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 382.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 382.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 378.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 378.
 Package rerunfilecheck Info: File `ConstitutionDraft2.out' has not changed.
-(rerunfilecheck)             Checksum: 72C66A337EE5AB552A52A8725F8F9BAF;3568.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 382.
+(rerunfilecheck)             Checksum: 289D449D48A9FB8C8FD4AE4927B7B51C;3478.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 378.
  ) 
 Here is how much of TeX's memory you used:
- 4406 strings out of 495063
- 66109 string characters out of 3182201
+ 4403 strings out of 495063
+ 66074 string characters out of 3182201
  141334 words of memory out of 3000000
- 7501 multiletter control sequences out of 15000+200000
+ 7500 multiletter control sequences out of 15000+200000
  8808 words of font info for 31 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  29i,6n,28p,767b,373s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -308,10 +308,10 @@ Here is how much of TeX's memory you used:
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on ConstitutionDraft2.pdf (16 pages, 86295 bytes).
+Output written on ConstitutionDraft2.pdf (16 pages, 85595 bytes).
 PDF statistics:
- 402 PDF objects out of 1000 (max. 8388607)
- 376 compressed objects within 4 object streams
- 106 named destinations out of 1000 (max. 500000)
- 393 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 396 PDF objects out of 1000 (max. 8388607)
+ 370 compressed objects within 4 object streams
+ 104 named destinations out of 1000 (max. 500000)
+ 385 words of extra memory for PDF output out of 10000 (max. 10000000)
 
