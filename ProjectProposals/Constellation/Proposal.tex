@@ -1,0 +1,137 @@
+\documentclass[12pt]{article}
+\title{
+Project Constellation Proposal
+\\
+Information Technology Club, OSU
+}
+\author{Zachery Thompson}
+\begin{document}
+
+\maketitle{}
+
+\clearpage{}
+
+In the last 10 years or so the internet has grown exponentially and begun to invade our every day lives. 
+We rely on it for entertainment, news, and even for our business affairs. Many businesses
+rely heavily on the internet for their inner workings, and even some businesses make their money by providing
+and facilitating connections to the wider internet. For the vast majority of users on the world wide web, 
+knowing how the inner works of the internet happen are simply not necessary and maybe even above their
+knowledge level. But for many engineers working with all forms of emerging technologies, having a better
+understanding of the inner workings of the world wide web is either a necessity, or would be a significant help
+to their work.  
+\\
+
+The concepts and technologies employed on the world wide web can be taught in classrooms and even explored in
+labs in a very basic sense. But to actually see the world wide web in action would require the observer to
+be an active part in the network. This is an incredibly daunting challenge for anyone acting on their own 
+behalf. Therefore it is very difficult to study how the world wide web functions in it's entirety.
+
+\clearpage{}
+
+\section{Project Constellation Overview}
+
+Project Constellation aims to emulate the world wide web on a much smaller scale and in a more controlled
+environment. The creation of such a network for academics would allow students to directly interact with a 
+network very similar to the world wide web in order to study the technologies and processes that create the
+larger world wide web.
+\\
+
+While the world wide web consists of thousands of very expensive routers all interconnected, such a network
+can be emulated using inexpensive off-the-shelf hardware that could be supplied by each participant of the
+project.
+\\
+
+Through collaboration on the part of all participants a large network acting very closely to the world wide 
+web can be achieved. Such a network could provide a complete platform to allow further exploration of the topics
+involved with the world wide web such as: DNS, Various routing protocols, multi-homed networks, and many others.
+
+
+\section{Materials and Methods}
+
+There are many different systems and methods that can be used to interconnect routing devices on the internet. 
+However the primary protocol used to stitch together the internet appears to be Border Gateway Protocol (BGP).
+For this project we will focus on using BGP as the core networking protocol, but many other protocols can be 
+used for edge routers or specific connections between peers for the purpose of learning.
+
+
+\subsection{Border Gateway Protocol}
+
+The protocol known as Border Gateway Protocol (BGP) is a very powerful yet easy to employ routing protocol that
+is widely used between routers on the world wide web. It uses the concept of peering to connect routers as neighbors.
+In this concept each neighbor may have many other neighbors, and each neighbor is communicates the routes on the network
+it has learned to all of its other neighbors. This allows a router on one side of the world to propagate it's advertised
+addresses across the entire internet.
+\\
+
+Entities acting on the internet are referred to as Autonomous Systems (AS). An AS encapsulates a single entity on the network
+and may be a single router connected to the internet, or a small interconnected cluster of routers each connected to the internet
+in different locations. In order to keep track of all this, each AS needs a special and unique number (an ASN) so that all systems on the network
+can differentiate other systems. Multiple interconnected routers owned by the same entity can employ the same AS number to create one
+large AS instead of using a single system per ASN.
+\\
+
+When connecting (called peering) two routers via the BGP protocol, each router must be assigned an ASN. The two routers then must be connected via 
+some ethernet capable medium and each interface in that connection must exist within the same subnet as the other router. Then each router must
+be configured to add the other as a neighbor. Once both routers have been configured with each other as a neighbor the BGP connection has been
+completed and the two routers can now share their routes. BGP is a very easy to implement protocol but carries significant power in the routing
+world.
+\\
+
+This project will not be limited to just BGP and may incorporate connections using RIP, OSPF, and even static routes. However the primary transport
+layer of this project should use BGP.
+
+
+\subsection{VyOS}
+
+In order to use off-the-shelf hardware for this project a routing operating system must be chosen for each node on the network. Ultimately the routing
+platform choice will be up to the person or entity implementing the router on the network. There are many choices that can support BGP, some do so
+out of the box, and others require additional software updates to support BGP.
+\\
+
+The officially suggested routing platform for this project is VyOS. VyOS is a fork of the Vyatta project which uses the Quagga routing engine. VyOS
+is capable of implementing routes via all of the major routing protocols out of the box from installation. It is light weight and capable of running
+on minimal hardware. It has a powerful command line interface that is loosely based on JunOS from Juniper. The command line syntax is easy to pick up
+and learn quickly. It can also easily be virtualized for easy testing and simulation of a full network from a single virtualization host. 
+\\
+
+As VyOS is so lightweight and simple to implement it will allow participants to select cheap hardware for their physical routing platform. 
+
+
+\subsection{Physical Hardware}
+
+Physical hardware selection will ultimately be up to the person or entity implementing the network segment just as with the routing OS. However
+do to physical and power constraints of physical placement of such devices there are a few guidelines that should be considered for physical hardware.
+\\
+
+First and foremost the hardware selected should be able to effectively run the selected routing OS. It should be able to successfully perform it's routing
+and switching duties as well as be able to hold the routing table of the entire network. The host should also be power friendly. All hosts should not consume
+more than 500W of power. The host should be quiet enough that you could comfortable take a test with the host running on the next desk over from you. The host
+should also be as small as possible while still being able to meet all of the other criteria. A small footprint for a host will allow it to be placed in such
+a way that it will remain out of the way of any day to day activities that may take place in the area it occupies.
+\\
+
+While those guidelines exist to ensure that no piece of this network would interfere with any on campus activities, there are other guidelines to consider
+for an effective router. It is suggested that each node acting as a router have more than 2 network ports. 3 network ports would allow for each node to peer
+with two other systems on the network and still provide network connectivity to some form of internal network maintained by the owner of the node. For long
+distance connections to other peers a fiber optic networking card may be required and is highly suggested.
+\\
+
+Some suggested systems are:
+
+\begin{itemize}
+	\item Dell Optiplex 755 SFF
+	\item Dell Optiplex 760 SFF
+	\item Dell Optiplex 780 SFF
+	\item Dell Optiplex 790 SFF
+	\item HP Elite 8200 SFF
+	\item Lenovo E71 SFF
+\end{itemize}
+
+\subsection{Physical Links}
+
+One of the primary barriers of this project is physically connecting the routers on the network. Hosts that reside within the same room would be capable
+of utilizing standard copper UTP cables to create links. However signals over UTP copper cables may begin to degrade past 100 meters (about 300 feet). 
+For longer distances it will be necessary to utilize fiber optic connections. The suggest fiber cabling type for this entire project is OS2 Single Mode
+fiber cables with LR optics. This will ensure that all fiber connections can travel any distance required by the network. 
+
+\end{document}
