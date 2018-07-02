@@ -1,0 +1,146 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1.0in]{geometry}
+
+\title{
+\textbf{OpenStack Cluster Proposal}
+\\
+\textit{Information Technology Club, OSU}
+}
+\author{Zachery Thompson}
+\begin{document}
+
+\maketitle{}
+\clearpage{}
+
+\section{Purpose}
+The purpose of this document is to outline the use of resources and division of work to build
+and maintain an OpenStack cluster using hardware provided to the Information Technology Club, OSU
+by the Server Infrastructure Group, Information Services, OSU. This document outlines the intended use
+for each piece of hardware to be donated and how each piece will be delegated within the club. 
+\\
+In order for a project to succeed in the long term it is necessary for multiple parties to be involved
+in the setup and maintenance of the project. This proposal will outline where the boundaries should 
+exist between parts of the project so that multiple parties will be responsible or involved in keeping up
+the project. If this plan is followed it should allow for easier passing of knowledge between generations 
+of club members and keep the project running smoothly.
+
+\section{The Hardware}
+The hardware in question is three Dell R610 1U servers. Each system has 12x4GB of RAM and dual 6 core hyperthreaded
+processors for 24 total cores of computing power. Each server is equipped with a host buss adapter and 6x1TB SAS hard
+drives. Each chassis has 4 onboard 1Gb NICs and dual redundant power supplies as well as remote access management. 
+\\
+In total this cluster will have 144GB of RAM, 72 computing cores, and 18TB of storage capacity. This will be replacing
+a cluster of only 80GB of RAM, 32 computing cores, and 2TB of storage capacity which will help relieve the strain on
+the current openstack cluster for the IT Club.
+
+\section{Software}
+The ultimate goal for the hardware is to implement openstack as a general purpose computing platform for the IT Club. The
+IT Club already has an openstack cluster, however there are several problems that drastically limit performance and scalability
+for the current setup. A new approach will be used with the new hardware to improve usability and scalability.
+\\
+A bare metal hypervisor will be used on each node to allow for easier deployment of base operating systems and management of
+total system resources. A bare metal hypervisor will also allow for easier movement of running systems for maintenance and upgrades.
+All the required subsystems of openstack will be run on virtual machines on top of these hypervisors. A distributed file system will
+be run along side the openstack subsystems in virtual machines as a storage system for openstack. 
+\\
+\subsection{VMWare ESXi}
+The bare metal hypervisor of choice for this project is ESXi from VMWare. It is available as a free platform with some restrictions
+or as a yearly subscription with no restrictions. The restrictions that most hinder the free version is a limit to the number of
+virtual processors a virtual machine can have. This is limited to 8 virtual processors per vm which should not be a problem for this
+project. Instead of one large vm for openstack several smaller vms will provide computing resources for openstack and allow for resources
+to be evenly spread across the three systems.
+\\
+\subsection{Ceph}
+Ceph is the distributed file system of choice for this project. Ceph allows for pooling of storage resources across a network as well as
+redundancy and storage system balancing on distributed storage nodes. Ceph is free and open source.
+\\
+\subsection{Other storage options}
+There are other distributed file system options that are candidates as well. A list of those options follows:
+\begin{enumerate}
+	\item GlusterFS
+	
+\end{enumerate}
+
+\subsection{OpenStack}
+
+OpenStack will be used to provide end users with access to virtual machines and software defined networking. OpenStack is an
+open source software suite capable of providing many different IT solutions. The focus of this cluster is on virtual machines
+and virtual networking with the possibility of adding software defined storage as well. Openstack is made up of multiple pieces
+of software interacting together to provide an end user with service. Generally it is broken into nodes where each node provides
+a specific piece of the openstack puzzle. The basic pieces of openstack are as follows:
+\begin{enumerate}
+	\item{Controller}
+	\item{Networking}
+	\item{Storage}
+	\item{Compute}
+\end{enumerate}
+
+
+For this implementation of openstack the different functions will be divided into multiple virtual machines. Each virtual machine
+will provide a specific function for openstack and be distributed as follows:
+\begin{enumerate}
+	\item{Control Node: Control plane, networking, and storage}
+	\item{Compute Node: Compute services, edge networking}
+\end{enumerate}
+
+
+\section{Hardware Setup}
+Each server will run 3 virtual machines each. Each virtual machine will consist of 8 virtual cores and 16GB of virtual memory. This 
+will equally distribute the resources and work around the 8 core limit for each VM. 
+\subsection{System 1 - Cluster1.fw-it-club.eecs.oregonstate.edu}
+System 1 will run 3 virtual machines as follows: controller.fw-it-club.eecs.oregonstate.edu, ceph1.fw-it-club.eecs.oregonstate.edu, compute1.fw-it-club.eecs.oregonstate.edu.
+\\
+Controller.fw-it-club.eecs.oregonstate.edu will be responsible for the control plane for the openstack deployment. It will run openstack services for Keystone, Nova, Neutron,
+and Glance. Nova, and Neutron will be the control plane versions of each service with the remote ends running on the compute nodes.
+\\
+Ceph1.fw-it-club.eecs.oregonstate.edu will run the master node for a 3 node Ceph cluster. It will be given 4 of the 6 total disks on Cluster1 for network storage.
+\\
+Compute1.fw-it-club.eecs.oregonstate.edu will be one of 5 compute nodes for the cluster. It will run the remote ends for Nova and Neutron. It will run KVM for 
+end user virtual machines. 
+
+\subsection{System 2 - Cluster2.fw-it-club.eecs.oregonstate.edu}
+System 2 will run 3 virtual machines as follows: ceph2.fw-it-club.eecs.oregonstate.edu, compute2.fw-it-club.eecs.oregonstate.edu, compute3.fw-it-club.eecs.oregonstate.edu.
+\\
+Ceph2.fw-it-club.eecs.oregonstate.edu will run a slave node for the 3 node Ceph cluster. It will also consume 4 of the 6 total disks on Cluster2.
+\\
+compute2 and compute3 will be mirrored from compute1.fw-it-club.eecs.oregonstate.edu and will provide more computing resources.
+
+\subsection{System 3 - Cluster3.fw-it-club.eecs.oregonstate.edu}
+System 3 will be a mirror of System 2 providing the same resources. It will run the following virtual machines: ceph3.fw-it-club.eecs.oregonstate.edu, compute4.fw-it-club.eecs.oregonstate.edu,
+compute5.fw-it-club.eecs.oregonstate.edu.
+
+
+\section{Project Division}
+This project will fall under the IT Club Datacenter group. The group will be further divided into sub groups for each part of the project.
+
+\subsection{Infrastructure}
+The Infrastructure group will be responsible for maintaining the physical hardware and physical networking for the project. This will likely
+include physical installation of the servers and engineering of the base network to support the system.
+
+\subsection{Bare Metal}
+The Bare Metal group will be responsible for installing and maintaining the bare metal hypervisor on each system. This will likely include
+installing the hypervisor on each system, setup, and tweaking for best performance. It will also likely include provisioning of the virtual
+machines for each service that is required. 
+
+\subsection{Ceph}
+The Ceph group will be responsible for installing and maintaining the Ceph nodes for the cluster. This will likely include installation
+and tweaking for best performance on the drives and across the network. It may include later expansion of the system.
+
+\subsection{Control}
+The Control group will be responsible for installation and maintenance of the openstack controller(s). This will likely include installation
+and performance tweaking as well as provisioning new compute nodes that are added to the cluster. 
+
+\subsection{SDN Network}
+The SDN Network group will be responsible for installation and maintenance of the virtual networking for openstack. This will likely include
+building Neutron configs to work with both the controller and the compute nodes. This group will also be responsible for working with the
+Infrastructure group to coordinate between virtual networks and physical networks.
+
+\subsection{SDN Compute}
+The SDN Compute group will be responsible for the installation and maintenance of the compute nodes. This will likely include installation
+and performance tweaking for each compute node added to the cluster. 
+
+\subsection{Administration}
+The Administration group will be responsible for administering user accounts and user projects within openstack. This will likely include
+user account creation, user project creation and user association, and user resource management.
+
+\end{document}
