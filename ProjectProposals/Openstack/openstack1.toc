@@ -1,0 +1,11 @@
+\contentsline {section}{\numberline {1}Proposal Purpose}{1}
+\contentsline {section}{\numberline {2}Project Purpose}{1}
+\contentsline {section}{\numberline {3}Hardware Overview}{1}
+\contentsline {section}{\numberline {4}Software Overview}{1}
+\contentsline {subsection}{\numberline {4.1}Windows Server 2016}{1}
+\contentsline {subsection}{\numberline {4.2}VMWare ESXi}{2}
+\contentsline {subsection}{\numberline {4.3}Other Services}{2}
+\contentsline {subsubsection}{\numberline {4.3.1}OpenStack Services}{2}
+\contentsline {subsubsection}{\numberline {4.3.2}Ceph FS}{2}
+\contentsline {section}{\numberline {5}Implementation}{2}
+\contentsline {section}{\numberline {6}End Results}{3}

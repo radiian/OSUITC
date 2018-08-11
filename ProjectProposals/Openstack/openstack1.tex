@@ -1,0 +1,99 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1.0in]{geometry}
+
+\title{
+\textbf{Hardware Usage Proposal}
+\\
+\textit{Information Technology Club, OSU}
+}
+\author{Zachery Thompson, President}
+\begin{document}
+\pagenumbering{gobble}
+
+
+\maketitle{}
+\clearpage{}
+
+\tableofcontents{}
+\clearpage{}
+
+
+\pagenumbering{arabic}
+\section{Proposal Purpose}
+This document serves to outline the proposed use of resources that have been granted to the Information Technology Club.
+The intent of this proposal is to create a framework and a set of guidelines for how new resources can be used to bring
+club members together for new learning opportunities and a chance to gain hands on experience. It will cover the end
+goal for the project as well as some steps to get there. 
+
+\section {Project Purpose}
+This project has multiple purposes for the IT Club. The primary purpose of this project is to provide club members
+hands on experience with multiple areas of the IT field. Members will have access to hands on experience in networking,
+hardware deployment, OS and Hypervisor installation, virtual machine setup and management, storage system setup and management,
+general system administration, and more. The goal is to create a project that is large enough that one individual would not
+be sufficient enough to manage alone, encouraging others to participate and take ownership of certain aspects of the project.
+\\
+The secondary purpose of this project is to provide stable computing resources to club members. Once this project is complete 
+the IT Club will have a functioning virtual machine hosting environment with many features. The goal is that this new system
+will replace the current OpenStack system and become superior to it.
+
+\section {Hardware Overview}
+Three servers are being granted to the IT Club for use in this project. They are being provided by the Server Infrastructure Group
+at Information Services for use by the IT Club. The three new systems are Dell R610 servers each with dual processors, memory, and
+hard drives already installed. They will be installed with a Dell R510 that the IT Club already owns. A Cisco Catalyst 3750G 48
+port network switch will handle network connectivity to the hosts and a white-box pfSense router will handle firewall and routing
+for the cluster. All together the cluster should occupy 6 rack units of space. 
+
+\section {Software Overview}
+The bulk of this project will be in installing software and managing it. The project will use a wide variety of software and 
+operating systems to build up the infrastructure required to run OpenStack. Windows Server 2016 will be used for Active Directory
+and user management, and VMWare ESXi will be used for the computing hosts to make better use of resources. 
+
+\subsection{Windows Server 2016}
+Windows Server is the OS of choice for user rights management across the entire cluster. Active Directory is widely used in many
+large and small organizations to maintain users and groups and grant access to various systems and services. Using Windows Server
+will not only provide a robust administration environment, but also expose members to systems and processes in use in nearly every
+business. The Active Directory environment will be installed on the Dell R510.
+
+\subsection{VMWare ESXi}
+ESXi (or vSphere) is a widely used enterprise grade hypervisor. It allows a single host, or cluster of hosts, to be provisioned with
+multiple tenant operating systems to divide resources between different individuals or services. ESXi will be the base layer for all
+other services for the IT Club. Other services will reside within virtual machines on the ESXi cluster. It is easy to install and manage
+and will provide members hands on access to the industry leading virtualization platform.
+
+\subsection{Other Services}
+The few remaining services that will be implemented in this project will reside within virtual machines on the ESXi cluster. They will 
+provide all the facilities required to run OpenStack effectively. This will include a number of virtual machines providing the control
+plane for OpenStack, computing resources for OpenStack, and a Ceph storage cluster for distributed file system services for OpenStack. 
+
+\subsubsection{OpenStack Services}
+The OpenStack system will be implemented on separate VMs distributed across the cluster. The suggested OS for this is CentOS 7. CentOS
+is a commonly used enterprise grade Linux distribution, however other distributions will support OpenStack and may be used at the
+request of the club members deploying the system. 
+
+\subsubsection{Ceph FS}
+Ceph FS is a distributed file system capable of using off the shelf hardware to provide distributed storage capabilities will low effort.
+It is a redundant and resilient system capable of scaling easily. Ceph FS will provide storage for end user VMs running on OpenStack. 
+It will allow OpenStack to migrate VMs between compute hosts in the even of a node failure. It will also allow for much more flexible
+use of storage resources.
+
+\section{Implementation}
+The entirety of this project is designed to be implemented by the club members. Everything from design and planning to rack and install
+is to be done by the members of the IT Club. Member meetings will take place to finalize designs and plans before installation will take 
+place. This will leave the plan open to peer review and suggestions as the systems come together. This will also present opportunities to
+new members to get involved, or current members to get involved in different parts of the project. Installation will be split between on
+premise work and remote work, with the majority of the work taking place remotely once the base infrastructure is in place. If the system
+is implemented properly then the majority of management tasks will be accomplished remotely over the network. Special care must be taken
+during planning to ensure that all necessary management facilities are accessible over the network.  
+
+
+\section{End Results}
+Once the project is completed the IT Club will have a well rounded set of resources for hosting virtual machines. This system can be used
+to provide resources to club members for their own experiments and also provide resources for the IT Club to host for members. However if
+the club so chooses, the whole thing can be torn down and rebuilt at a later date as an exercise in repetition. This would provide new members
+a chance to participate if they were not able to previously, and other members who did participate previously to take part in a different 
+area of the project. The club may also find that OpenStack is not suitable for providing resources when implemented as planned and a new plan
+can be developed to provide resources to members. The end result will be the same regardless of what happens at the end. Opportunities to learn
+will have been created and fulfilled and the quest for knowledge furthered. Club members will have been able to find new interests or disinterests,
+and new areas of IT in which to study. Members will have formed new relationships and bonds between other members and the IT Club will grow stronger.
+ 
+\end{document}
